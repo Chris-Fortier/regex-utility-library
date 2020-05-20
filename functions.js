@@ -57,10 +57,25 @@ function countAlphanumeric(string) {
 }
 
 // Match Everything But Letters and Numbers
+function countNonAlphanumeric(string) {
+   // This will count the number of non alphanumeric characters in the given string.
+   let regex = /\W/g;
+   return string.match(regex).length;
+}
 
 // Match All Numbers
+function countNumeric(string) {
+   // This will count the number of numeric characters in the given string.
+   let regex = /\d/g;
+   return string.match(regex).length;
+}
 
 // Match All Non-Numbers
+function countNonNumeric(string) {
+   // This will count the number of non numeric characters in the given string.
+   let regex = /\D/g;
+   return string.match(regex).length;
+}
 
 // Match Non-Whitespace Characters
 
