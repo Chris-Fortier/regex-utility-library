@@ -7,6 +7,7 @@
    --spacer-4: calc(1.5 * var(--spacer));
    --spacer-5: calc(3 * var(--spacer));
    overflow-y: scroll;
+   background-color: #222; /* bg color of page outside the body */
 }
 
 .inline-action {
@@ -28,4 +29,13 @@ p.name {
 
 p.name:hover {
    text-decoration: underline;
+}
+
+body {
+   background-color: #222; /* bg color of sides of page */
+}
+
+.container {
+   background-color: #222; /* bg color of sides content area */
+   color: #aaa;
 }
