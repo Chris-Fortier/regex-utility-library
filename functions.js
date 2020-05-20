@@ -78,6 +78,11 @@ function countNonNumeric(string) {
 }
 
 // Match Non-Whitespace Characters
+function countNonWhiteSpace(string) {
+   // This will count the number of non-whitespace characters in the given string.
+   let regex = /\S/g;
+   return string.match(regex).length;
+}
 
 // Positive and Negative Lookahead
 
