@@ -22,6 +22,11 @@ function matchSingleCharactersNotSpecified(string, possibilities) {
 }
 
 // Match Characters that Occur One or More Times
+function matchCharactersThatOccurOneOrMoreTimes(string, letter) {
+   // This will find matches when the given letter occurs one or more times in string.
+   let regex = new RegExp(letter + "+", "ig");
+   return string.match(regex);
+}
 
 // Find One or More Criminals in a Hunt
 
