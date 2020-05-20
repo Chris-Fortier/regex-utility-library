@@ -1,11 +1,17 @@
 // Match Literal Strings
 function matchLiteral(string, pattern) {
    // This will check if pattern is in string with a literal match.
-   regex = new RegExp(pattern, "g"); // https://stackoverflow.com/questions/494035/how-do-you-use-a-variable-in-a-regular-expression
+   let regex = new RegExp(pattern, "g"); // https://stackoverflow.com/questions/494035/how-do-you-use-a-variable-in-a-regular-expression
    return regex.test(string);
 }
 
 // Match Single Character with Multiple Possibilities
+function matchSingleCharacterWithMultiplePossibilities(string, possibilities) {
+   // This will find all the characters in possibilities in string.
+   let regex = new RegExp("[" + possibilities + "]", "ig");
+   console.log(regex);
+   return string.match(regex);
+}
 
 // Match Single Characters Not Specified
 
