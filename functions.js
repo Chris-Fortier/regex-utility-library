@@ -29,6 +29,11 @@ function matchCharactersThatOccurOneOrMoreTimes(string, letter) {
 }
 
 // Find One or More Criminals in a Hunt
+function findCriminals(people, criminal) {
+   // This will find one or more criminals represented by letter criminal within a group of other people.
+   let reCriminal = new RegExp(criminal + "+", "g");
+   return people.match(reCriminal);
+}
 
 // Match Beginning String Patterns
 
