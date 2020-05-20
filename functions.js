@@ -43,6 +43,11 @@ function matchBeginningStringPattern(string, target) {
 }
 
 // Match Ending String Patterns
+function matchEndingStringPattern(string, target) {
+   // This will find target only at the ending of the string.
+   let regex = new RegExp(target + "$");
+   return string.match(regex);
+}
 
 // Match All Letters and Numbers
 
