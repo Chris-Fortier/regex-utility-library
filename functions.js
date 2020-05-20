@@ -14,6 +14,12 @@ function matchSingleCharacterWithMultiplePossibilities(string, possibilities) {
 }
 
 // Match Single Characters Not Specified
+function matchSingleCharactersNotSpecified(string, possibilities) {
+   // This will find all the characters not in possibilities in string.
+   let regex = new RegExp("[^" + possibilities + "]", "ig");
+   console.log(regex);
+   return string.match(regex);
+}
 
 // Match Characters that Occur One or More Times
 
