@@ -50,7 +50,7 @@ function matchEndingStringPattern(string, target) {
 }
 
 // Match All Letters and Numbers
-function matchEndingStringPattern(string) {
+function countAlphanumeric(string) {
    // This will count the number of alphanumeric characters in the given string.
    let regex = /\w/g;
    return string.match(regex).length;
