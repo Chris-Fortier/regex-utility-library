@@ -36,6 +36,11 @@ function findCriminals(people, criminal) {
 }
 
 // Match Beginning String Patterns
+function matchBeginningStringPattern(string, target) {
+   // This will find target only in the beginning of the string.
+   let regex = new RegExp("^" + target);
+   return string.match(regex);
+}
 
 // Match Ending String Patterns
 
