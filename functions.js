@@ -92,6 +92,12 @@ function lookAhead(password) {
 }
 
 // Check For Mixed Grouping of Characters
+function testIfRoosevelt(string) {
+   // This will check if the name you entered is either Franklin or Eleanor Roosevelt.
+   let myString = "Eleanor Roosevelt";
+   let myRegex = /(Franklin|Eleanor).+Roosevelt/;
+   return myRegex.test(string);
+}
 
 // Use Capture Groups to Search and Replace
 
