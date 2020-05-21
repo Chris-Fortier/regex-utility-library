@@ -100,5 +100,22 @@ function testIfRoosevelt(string) {
 }
 
 // Use Capture Groups to Search and Replace
+function reverseThreeWords(string) {
+   // This will reverse three words in a string using capture groups to search and replace.
+   let fixRegex = /(\w+)\s(\w+)\s(\w+)/;
+   let replaceText = "$3 $2 $1";
+   let result = string.replace(fixRegex, replaceText);
+   console.log(result);
+   return result;
+}
 
 // Remove Whitespace from Start and End
+function removeWhiteSpaceFromEnds(string) {
+   // This will remove the space from the beginning and end of the string.
+   let hello = "   Hello, World!  ";
+   // let wsRegex = /(\s{2,})/gi; // Change this line
+   let wsRegex = /^\s+|\s+$/gi;
+   let result = string.replace(wsRegex, "");
+   console.log(result);
+   return result;
+}
